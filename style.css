@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: salmon;
+}
+h2{
+    margin: 10px;
+    color: #CCE5FF;
+}
+span{
+    color: #CC99FF;
+}
+input[type='text']{
+    width: 50%;
+}
+
+input[type='submit']{
+    background-color: #db3361;
+    cursor: pointer;
+}
+
+.container{
+    padding-top: 20px;
+    background-image: url(./img/anh.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    min-height: 780px;
+}
+
+p{
+    color: rgb(149, 202, 202);
+    font-weight: bold;
+    font-size: 17px;
+}
+
+ul{
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    max-width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li{
+    width: 60%;
+    /* height: 22px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+    margin-top: 8px;
+}
+
+
+
+li>div{
+    /* padding-left: 20px; */
+    /* text-indent: 20px; */
+    width: 100%;
+    padding: 7px;
+    margin-right: 5px;
+    /* height: 100%; */
+    text-align: left;
+    border: 1px solid rgb(114, 114, 114);
+    border-right: none;
+    background-color: rgba(133, 162, 165, 0.9);
+    /* overflow-wrap: break-word; */
+}
+
+button{
+    background-color: rgb(42, 132, 159);
+    color: #c8bfdd;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 400px) {
+    .container{
+        width: 100%;
+    }
+    input[type='text']{
+        width: 200px;
+    }
+}
