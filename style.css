@@ -104,9 +104,15 @@ button:hover{
         width: 100%;
     }
     input[type='text']{
-        width: 260px;
+        width: 70%;
     }
     li{
         width: 90%;
     }
 }
+
+/* @media only screen and (min-width: 600px) {
+    li{
+        width: 60%;
+    }
+} */
