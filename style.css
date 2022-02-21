@@ -104,6 +104,9 @@ button:hover{
         width: 100%;
     }
     input[type='text']{
-        width: 200px;
+        width: 260px;
+    }
+    li{
+        width: 90%;
     }
 }
