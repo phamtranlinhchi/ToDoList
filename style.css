@@ -6,6 +6,9 @@
 body{
     margin: 0;
     background-color: #6f6f70;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h1{
     margin: 10px;
@@ -13,6 +16,18 @@ h1{
 }
 span{
     color: #CC99FF;
+}
+.anh{
+    position: fixed;
+    top: 0;
+    background-image: url(./img/anh.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 100vh;
+    z-index: -99;
+    margin: auto;
 }
 input[type='text']{
     width: 50%;
@@ -33,12 +48,8 @@ input[type='submit']{
 
 .container{
     padding-top: 20px;
-    background-image: url(./img/anh.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 60%;
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
     min-height: 780px;
 }
@@ -101,6 +112,9 @@ button:hover{
 
 @media only screen and (max-width: 800px) {
     .container{
+        width: 100%;
+    }
+    .anh{
         width: 100%;
     }
     input[type='text']{
